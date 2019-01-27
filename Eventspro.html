@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
-    <title>Document</title>
+    <title>Woman Evolve</title>
 </head>
 <body>
     <h1>Woman Evolve</h1>
@@ -18,30 +18,20 @@
     
 <nav>
     
-    <div class="col-lg-3 md-3 sm-3">
+    <div class="Event">
         <ul>
                 <div class="shirt">
                         <i class="fas fa-tshirt"></i>
                 </div>
             <li><a href="">Home</a></li>
-            <li><a href="">About</a>
-                <ul>
-                    <li><a href=""></a>About</li>
-                    <li><a href=""></a>Team</li>
-                    <li><a href=""></a>Team</li>
-                </ul>
-            </li>    
-            <li><a href="">Events</a>
-                <ul>
-                    <li> <a href=""></a>Past Events</li>
-                    <li> <a href=""></a>Current Events</li>
-                </ul>
-            </li>    
+            <li><a href="">About</a></li>    
+            <li><a href="">Current Events</a></li>    
+            <li><a href="">Past Events</a></li>    
             <li><a href="">Contacts</a></li>
-            <form id="search" action="action_page.php">
+            <!-- <form id="search" action="action_page.php">
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>              
+                  </form>               -->
         </ul>
         
         <div class="button">
@@ -55,7 +45,7 @@
             <div class="container">
               <h2>Register</h2>
               <p>Please fill in this form to Register.</p>
-              <hr>
+              <hr style="border: 1px solid black;width: 480px;">
               <label for="email"><b>Email</b></label>
               <input type="text" placeholder="Enter Email" name="email" required>
           
@@ -64,16 +54,40 @@
           
               <label for="psw-repeat"><b>Repeat Password</b></label>
               <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-              <hr>
+              <hr style="border: 1px solid black;width: 480px;}">
           
               <p>By registering you agree to our <a href="#">Terms & Privacy</a>.</p>
               <button type="submit" class="registerbtn">Register</button>
             </div>
           
             <div class="container signin">
-              <p>Already registered? <a href="#">Sign in</a>.</p>
+              <p class="message">Already registered? <a href="#">Sign in</a></p>
             </div>
           </form>
+
+          <form class="login-form">
+             <input type="text" placeholder="user name"/>
+             <input type="password" placeholder="password"/>
+             <button> login</button> 
+             <p class="message">Not Registered? <a href="#">Register</a></p>
+
+          </form>
+          <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
           
+          
+          <script>
+                $(".message a").on('click',function(){
+                $("form").slideToggle();});
+            </script>﻿
+          
+          
+
+
+
+
+
 </body>
 </html>

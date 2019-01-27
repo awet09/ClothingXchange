@@ -1,0 +1,78 @@
+#adnan
+ {
+      background-color: rgb(71, 63, 63);
+      height: 85px;
+      width: 100%;s
+ }
+  
+  #nav
+  {
+   
+   background: rgb(112, 101, 99);
+   max-height: 80px;
+   
+  }
+  ul
+  {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+           position: absolute;
+  }
+  ul li
+  {
+           float: left;
+          margin-top: 20px;
+  }
+  ul li a
+  {
+   width: 100px;
+   color: white;
+   display: block;
+   text-decoration: none;
+   font-size: 20px;
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   font-family: Century Gothic;
+   font-weight: bold;
+  }
+  a:hover
+  {
+   background: #669900;
+  }
+  ul li ul
+  {
+   background: tomato;
+   margin-top: 10px;
+  }
+  ul li ul:hover
+  {
+   transition: 3s ease;
+   background: gray;
+   color: white;
+  }
+  ul li ul li
+  {
+   float: right;
+  }
+  ul li ul
+  {
+   display:none; 
+  }
+  ul li:hover ul
+  {
+   /* display: block; */
+  }
+  #search input {
+    margin-top: 8px;
+    float: right;
+   
+ 
+  }
+  #search button {
+    float: right;
+  
+   
+  }
+  
